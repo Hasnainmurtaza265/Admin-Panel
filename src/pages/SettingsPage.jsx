@@ -63,7 +63,7 @@ export default function SettingsPage({ currentUser, setCurrentUser }) {
       id: 'key_2',
       name: 'Analytics ETL Pipeline',
       prefix: 'sk_live_33f2...',
-      ffull: 'test_key_here2',
+      full: 'test_key_here2',
       created: '2025-03-22',
       lastUsed: 'Yesterday',
     },
