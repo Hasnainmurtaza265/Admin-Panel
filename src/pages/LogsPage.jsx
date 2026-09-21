@@ -60,7 +60,7 @@ export default function LogsPage({
     const newLog = {
       id: `LOG-${Math.floor(400 + Math.random() * 500)}`,
       timestamp: new Date().toISOString().replace('T', ' ').substring(0, 19),
-      user: 'Elena Rostova',
+      user: 'Hasnain Murtaza',
       action: picked.action,
       detail: picked.detail,
       level: picked.level,

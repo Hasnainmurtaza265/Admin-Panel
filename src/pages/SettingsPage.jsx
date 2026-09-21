@@ -21,9 +21,9 @@ export default function SettingsPage({ currentUser, setCurrentUser }) {
   // Profile Form
   const [profileData, setProfileData] = useState({
     name: currentUser?.name || 'Elena Rostova',
-    email: currentUser?.email || 'elena.rostova@nexus.io',
-    phone: '+1 (555) 234-5678',
-    department: 'Engineering & Operations',
+    email: currentUser?.email || 'forexample@gmail.com',
+    phone: '+92 3XXXXXXXXX',
+    department: 'Co-Founder',
     bio: 'Lead administrative architect overseeing platform reliability and logistics pipeline.',
   });
 
@@ -149,11 +149,10 @@ export default function SettingsPage({ currentUser, setCurrentUser }) {
               key={tab.id}
               id={`settings-tab-${tab.id}`}
               onClick={() => setActiveTab(tab.id)}
-              className={`flex items-center gap-2 px-4 py-2.5 text-xs font-semibold border-b-2 whitespace-nowrap transition-colors ${
-                isActive
-                  ? 'border-blue-600 text-blue-600 dark:text-blue-400'
-                  : 'border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-slate-200'
-              }`}
+              className={`flex items-center gap-2 px-4 py-2.5 text-xs font-semibold border-b-2 whitespace-nowrap transition-colors ${isActive
+                ? 'border-blue-600 text-blue-600 dark:text-blue-400'
+                : 'border-transparent text-slate-500 hover:text-slate-900 dark:hover:text-slate-200'
+                }`}
             >
               <Icon className="w-4 h-4" />
               <span>{tab.label}</span>
@@ -372,14 +371,12 @@ export default function SettingsPage({ currentUser, setCurrentUser }) {
                 setTwoFactorEnabled(!twoFactorEnabled);
                 triggerSaveBanner();
               }}
-              className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                twoFactorEnabled ? 'bg-blue-600' : 'bg-slate-300 dark:bg-slate-700'
-              }`}
+              className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${twoFactorEnabled ? 'bg-blue-600' : 'bg-slate-300 dark:bg-slate-700'
+                }`}
             >
               <span
-                className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
-                  twoFactorEnabled ? 'translate-x-5' : 'translate-x-0'
-                }`}
+                className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${twoFactorEnabled ? 'translate-x-5' : 'translate-x-0'
+                  }`}
               />
             </button>
           </div>
@@ -455,14 +452,12 @@ export default function SettingsPage({ currentUser, setCurrentUser }) {
                   });
                   triggerSaveBanner();
                 }}
-                className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${
-                  notifSettings[item.key] ? 'bg-blue-600' : 'bg-slate-300 dark:bg-slate-700'
-                }`}
+                className={`relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none ${notifSettings[item.key] ? 'bg-blue-600' : 'bg-slate-300 dark:bg-slate-700'
+                  }`}
               >
                 <span
-                  className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
-                    notifSettings[item.key] ? 'translate-x-4' : 'translate-x-0'
-                  }`}
+                  className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${notifSettings[item.key] ? 'translate-x-4' : 'translate-x-0'
+                    }`}
                 />
               </button>
             </div>

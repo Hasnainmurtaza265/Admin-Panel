@@ -45,10 +45,10 @@ export default function App() {
 
   // Current admin user
   const [currentUser, setCurrentUser] = useState({
-    name: 'Elena Rostova',
-    email: 'elena.rostova@nexus.io',
+    name: 'Hasnain Murtaza',
+    email: 'admin@gamil.com',
     role: 'Super Admin',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    avatar: 'https://avatars.githubusercontent.com/u/248255139?s=400&u=b1ba33760dedd783e7904909ec7de1ba5f38294b&v=4',
   });
 
   // Dark mode effect on root html element
@@ -125,9 +125,8 @@ export default function App() {
       {/* Main Content Area */}
       <main
         id="main-content-viewport"
-        className={`flex-1 transition-all duration-200 ease-in-out pt-16 ${
-          isSidebarCollapsed ? 'lg:pl-20' : 'lg:pl-64'
-        }`}
+        className={`flex-1 transition-all duration-200 ease-in-out pt-16 ${isSidebarCollapsed ? 'lg:pl-20' : 'lg:pl-64'
+          }`}
       >
         <div className="p-4 sm:p-6 max-w-7xl mx-auto">
           {activePage === 'dashboard' && (
